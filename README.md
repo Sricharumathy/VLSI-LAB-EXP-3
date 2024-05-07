@@ -1,9 +1,11 @@
-# VLSI LAB EXPERIMENTS-03
 # SIMULATION AND IMPLEMENTATION OF MULTIPLIER
+
 ## AIM: 
 To simulate and synthesis Multiplier using VIVADO
+
 ## APPARATUS REQUIRED:
 VIVADO 2023.2
+
 ## PROCEDURE:
  STEP:1 Start the Vivado, Select and Name the New project.
  
@@ -16,9 +18,11 @@ VIVADO 2023.2
  STEP:5 Select the Behavioural Simulation in the Source Window and click the check syntax.
  
  STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.
- ## 2Bit Multiplier
+
+ ## 2BIT MULTIPLIER
  ![image](https://github.com/Sricharumathy/VLSI-LAB-EXP-3/assets/159044760/2701f33f-3d58-49f1-8071-9a1118ff2bf2)
- ## Program
+
+ ## PROGRAM
  ```
 module HA(a, b, s, c);
 input a, b;
@@ -35,11 +39,14 @@ HA h1(a[0] & b[1], a[1] & b[0], c[1], w1);
 HA h2(a[1] & b[1], w1, c[2], c[3]);
 endmodule
 ```
-## Output
+
+## OUTPUT
 ![318283574-f29dd6df-623b-4bca-8f36-6dc51e76349a](https://github.com/Sricharumathy/VLSI-LAB-EXP-3/assets/159044760/6f0ad691-6d13-466b-8ef8-ebf1dbe95e6d)
-## 4Bit Multiplier 
+
+## 4BIT MULTIPLIER
 ![image](https://github.com/Sricharumathy/VLSI-LAB-EXP-3/assets/159044760/7173de17-0ddf-4593-b9a8-726d785f7e9c)
-## Program
+
+## PROGRAM
 ```
 module HA(a,b,sum,carry);
 input a,b;
@@ -72,9 +79,11 @@ FA f7(a[2]&b[3],s[6],c[10],p[5],c[11]);
 FA f8(a[3]&b[3],c[8],c[11],p[6],p[7]); 
 endmodule
 ```
-## Output
+
+## OUTPUT
 ![318284353-66883bf8-04b2-4481-969b-cf124f3df8d3](https://github.com/Sricharumathy/VLSI-LAB-EXP-3/assets/159044760/78bd4beb-5cdc-4d4a-bd43-d26fac2c678d)
-## Result
+
+## RESULT
 Thus, The 2 Bit and 4 Bit Multiplier are simulated successfully.
 
 
